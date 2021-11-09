@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main(){
+    string str="Here comes the coder";
+    cout<<"The intial string :"<<endl;
+    cout<<str<<endl;
+    int n;
+    cin>>n;
+    str.resize(n);
+    cout<<"The string after using resize :"<<endl;
+    cout<<str<<endl;
+    cout<<"the capacity of the string is : "<<endl;
+    cout<<str.capacity()<<endl;
+    cout<<"The length of the string is : "<<str.length()<<endl;
+    str.shrink_to_fit();
+    cout<<"the new capacity after shrinking is :"<<endl;
+    cout<<str.capacity()<<endl;
+    return 0;
+}
