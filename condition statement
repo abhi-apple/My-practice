@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    while(n%2!=0){
+        cout<<"Weird"<<endl;
+        break;
+    }while (n>1&n<=5&n%2==0) {
+        cout<<"Not Weird"<<endl;
+        break;
+    
+    }while(n>=6&n<=20&n&2==0){
+        cout<<"Weird"<<endl;
+        break;
+        
+    }while(n>20) {
+        cout<<"Not Weird"<<endl;
+        break;
+    }
+    return 0;
+}
